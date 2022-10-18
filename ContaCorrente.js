@@ -8,7 +8,7 @@ export class ContaCorrente extends Conta {
         ContaCorrente.numeroDeContas += 1;
     }
 
-    /**sobrescrevendo o método sacar */
+    /**sobrescrevendo o método sacar da classe conta*/
     sacar(valor) {
         let taxa = 1.1;
         return this._sacar(valor, taxa);
