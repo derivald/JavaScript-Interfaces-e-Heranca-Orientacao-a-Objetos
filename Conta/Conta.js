@@ -2,7 +2,7 @@
 export class Conta {
     constructor(saldoInicial, cliente, agencia) {
         if(this.constructor == Conta){
-            throw new Error("Você não deveria instanciar um objeto do tipo Conta diretamente pois essa é uma classe abstrata")
+            throw new Error("Você não deveria instanciar um objeto do tipo Conta diretamente pois essa é uma classe abstrata");
         }
         this._saldo = saldoInicial;
         this._cliente = cliente;
@@ -38,15 +38,16 @@ export class Conta {
     }
 
     depositar(valor) {
-        if (valor <= 100) {
-            return; //o retorno colocado primeiro
-        }
+       
         this._saldo += valor;
-    }
+        }
+    
 
     transferir(valor, conta) {
         /**primeiro saca */
         const valorSacado = this.sacar(valor);
         conta.depositar(valorSacado); /**depois deposita */
-    }
+        }
+ 
+
 }
