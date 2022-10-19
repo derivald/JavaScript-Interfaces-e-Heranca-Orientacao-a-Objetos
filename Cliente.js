@@ -3,11 +3,13 @@ export class Cliente {
         this.nome = nome;
         this._cpf = cpf;
         this._senha = _senha;
+        
     }
     get cpf() {
         return this._cpf;
     }
-   autenticar(){
-    return false;
+    autenticar(){
+        return true;
     }
+ 
 }

@@ -5,7 +5,7 @@ export class Funcionario{
             this._salario = salario;
             this._cpf = cpf;
 
-            this._bonificacao =1;
+            this._bonificacao = 1;
             this._senha;
         }
         autenticar(senha){
